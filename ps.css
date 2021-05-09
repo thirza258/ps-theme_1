@@ -1,0 +1,113 @@
+body {
+    background: linear-gradient(45deg, darkblue, blue, skyblue);
+    margin: 0;
+}
+
+div#container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+td {
+    width: 17vmin;
+    height: 17vmin;
+}
+
+div#main1 {
+    color: #ededed;
+    border-color: #ededed;
+    animation: load 9.7s cubic-bezier(1, 0, 1, 0) infinite;
+    position: relative;
+}
+
+div#main2 {
+    color: #ededed;
+    border-color: #ededed;
+    animation: load 10s cubic-bezier(1, 0, 1, 0) infinite reverse;
+    position: relative;
+}
+
+div#main3 {
+    color: #ededed;
+    border-color: #ededed;
+    animation: load 10.3s cubic-bezier(1, 0, 1, 0) infinite alternate-reverse;
+    position: relative;
+}
+
+div#main4 {
+    color: #ededed;
+    border-color: #ededed;
+    animation: load 10.7s cubic-bezier(1, 0, 1, 0) infinite alternate;
+    position: relative;
+}
+
+@keyframes load {
+    0% {
+        width: 0;
+        height: 0;
+        font-size: 0;
+        border: 0vmin solid;
+        transform: rotate(0deg);
+    }
+    6.25% {
+        width: 10vmin;
+        height: 10vmin;
+        border: 2vmin solid;
+        font-size: 0;
+        transform: rotate(360deg);
+    }
+    18.75% {
+        width: 0;
+        height: 0;
+        font-size: 0;
+        border: 0vmin solid;
+    }
+    31.25% {
+        height: 0;
+        width: 0;
+        border-left: 6vmin solid transparent;
+        border-right: 6vmin solid transparent;
+        border-bottom: 12vmin solid;
+        border-top: 0vmin solid;
+        font-size: 0;
+        border-radius: 0;
+        transform: rotate(720deg);
+    }
+    43.75% {
+        width: 0;
+        height: 0;
+        font-size: 0;
+        border: 0vmin solid transparent;
+    }
+    56.25% {
+        border: 2vmin solid #ededed;
+        border-radius: 50%;
+        width: 10vmin;
+        height: 10vmin;
+        transform: rotate(1080deg);
+    }
+    68.75% {
+        width: 0;
+        height: 0;
+        font-size: 0;
+        border: 0vmin solid;
+    }
+    81.25% {
+        border: 0 solid;
+        font-size: 15vmin;
+        width: 15vmin;
+        height: 15vmin;
+        transform: rotate(1440deg);
+    }
+    93.75% {
+        width: 0;
+        height: 0;
+        font-size: 0;
+        border: 0vmin solid;
+        transform: rotate(1800deg);
+    }
+}
