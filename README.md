@@ -1,2 +1,2 @@
 # ps-theme_1
-this is just testing adding something to repo 
+this repo for testing adding something to repo 
